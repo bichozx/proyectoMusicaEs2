@@ -5,10 +5,7 @@ import mongoose from 'mongoose';
 const PORT = process.env.Port2 || 9000;
 
 const dbConnection2 = async () => {
-  // app.listen(PORT, () => {
-  //   console.log(`Servidor corriendo en el puerto ${PORT}`);
-  // });
-
+  
   try {
     await mongoose.connect(process.env.dbURI, {
       
